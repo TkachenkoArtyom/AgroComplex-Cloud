@@ -1,0 +1,37 @@
+.hall
+  &-item
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+    font-size: 24px
+    font-weight: normal
+    &_info 
+      color: #000
+    &_img-wrapper
+      max-width: 320px
+      height: auto
+      position: relative
+      img 
+        width: 320px
+        height: 320px
+        object-fit: cover 
+      span    
+        border-radius: 1em
+        color: #fff
+        font-size: 20px
+        cursor: pointer
+        text-align: center
+        padding-top: 230px
+        position: absolute
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+        background-color: rgba(0,0,0,.3)
+        opacity: 1
+        transition: all .2s ease
+        &:hover 
+          opacity: 0
+          transition: all .2s ease

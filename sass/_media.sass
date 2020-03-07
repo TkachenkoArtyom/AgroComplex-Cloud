@@ -1,0 +1,169 @@
+@media screen and (max-width: 1200px)
+	// custom
+
+@media screen and (max-width: 992px)
+	.header
+		.top-line 
+			background-color: #fff
+			min-height: 170px
+			.blueline 
+				top: 65px
+				height: 55px
+			.logo 
+				top: -70px
+				margin: 20px 0
+				width: 140px
+				height: 140px
+			.menu	
+				ul 
+					background-color: $accent
+					margin: 0px 100px 0 auto
+					width: 40%
+					flex-direction: column
+					justify-content: center
+					border: 1px solid #fff
+					li 
+						border-bottom: 1px solid #fff
+						width: 100%
+						text-align: center
+						&:last-child 
+							border-bottom: none
+						> a 
+							display: flex
+							justify-content: center
+							text-align: center
+							padding: 10px
+							font-size: 16px
+							transition: all .25s
+							text-decoration: none
+							span 
+								.fa-angle-left
+									display: inline-block
+									margin: 5px 10px 0 0
+								.fa-angle-down
+									display: none
+							&:hover,
+							&.active 
+								transition: all .25s
+								border-bottom: none
+							//	font-size: 18px
+								text-decoration: none
+						> ul 
+							top: -1px
+							left: -100%		
+		&-content 
+			.h1 
+				font-size: 68px
+			&_text 
+				font-size: 16px
+				margin-top: 0px
+			.scroll-arrow
+				font-size: 30px
+				font-weight: normal
+				bottom: 50px
+
+
+
+@media screen and (max-width: 768px) 
+	.header
+		.top-line 
+			background-color: #fff
+			.menu	
+				ul 
+					li 
+						> a 
+							font-size: 16px
+							&:hover,
+							&.active 
+								transition: all .25s
+								border-bottom: none
+							//	font-size: 18px
+
+		&-content 
+			.h1 
+				font-size: 60px
+			&_text 
+				font-size: 15px
+			.scroll-arrow
+				font-size: 36px
+
+@media screen and (max-width: 645px) 
+	.header
+		&-content 
+			.h1 
+				font-size: 52px
+			&_text 
+				font-size: 14px
+			.scroll-arrow
+				font-size: 33px
+
+
+@media screen and (max-width: 576px)
+	.header
+		&-content 
+			.h1 
+				font-size: 50px
+			&_text 
+				font-size: 14px
+			.scroll-arrow
+				font-size: 33px
+
+@media screen and (max-width: 537px)
+	.header
+		&-content 
+			.h1 
+				font-size: 44px
+			&_text 
+				font-size: 15px
+			.scroll-arrow
+				font-size: 28px
+
+@media screen and (max-width: 477px)
+	.header
+		&-content 
+			.h1 
+				font-size: 40px
+			&_text 
+				font-size: 14px
+			.scroll-arrow
+				font-size: 28px
+
+@media screen and (max-width: 430px)
+	.header
+		.top-line
+			.menu 
+				ul 
+					width: 40%
+					margin: 0 80px 0 auto 
+
+		&-content 
+			.h1 
+				font-size: 36px
+			&_text 
+				font-size: 14px
+			.scroll-arrow
+				font-size: 26px
+
+@media screen and (max-width: 385px)
+	.header
+		.top-line 
+			.menu 
+				ul 
+					li 
+						> a 
+							font-size: 14px
+		&-content 
+			.h1 
+				font-size: 29px
+			&_text 
+				font-size: 14px
+			.scroll-arrow
+				font-size: 26px
+
+@media screen and (max-width: 320px)
+	.header
+		&-content 
+			.h1 
+				font-size: 28px
+			.scroll-arrow
+				font-size: 24px

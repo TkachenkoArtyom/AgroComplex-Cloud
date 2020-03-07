@@ -1,0 +1,111 @@
+.header-history 
+	height: 0
+	min-height: 230px
+
+.placeholder 
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	max-height: 380px
+	background-repeat: no-repeat
+	background-repeat: cover 
+	background-position: bottom center 
+	word-wrap: break-word
+
+.history 
+	width: 100%
+	&-image 
+		max-width: 720px
+		height: auto
+		margin: 0 auto 40px
+		padding-left: 15px
+ 	 padding-right: 15px
+	&-content 
+		max-width: 1200px
+		margin: 0 auto
+		font-weight: normal
+		font-size: 20px
+
+		//	----- TIMELINE
+
+.timeline 
+	backface-visibility: inherit
+	padding: $gutter*2 0 
+	+media-breakpoint-down(xs)
+	padding: $gutter * 2
+	&-item 
+		padding: $gutter/2 0 
+		position: relative
+		&::before
+			content: '●'
+			position: absolute
+			width: 2px
+			height: 100%
+			background-color: #000
+			color: red
+			font-size: 36px
+			line-height: 220%
+			text-indent: -10px
+		&:nth-child(odd)
+			text-align: right
+			padding-right: 90+$gutter
+			p 
+				margin: 4px 0px 0 0
+			.timeline-item-icon
+			 right: $gutter 
+			&::before 
+				right: 0
+			+media-breakpoint-down(xs)
+				text-align: left
+				padding-left: 90 + $gutter
+				padding-right: 0
+				.timeline-item-icon
+					left: $gutter
+				&::before
+					left: -2px
+		&:nth-child(even)
+			+make-col-offset(6)
+			text-align: left
+			padding-left: 90+$gutter
+			p 
+				margin: 4px 0px 0px 0px
+			.timeline-item-icon 
+				left: $gutter
+			&::before 
+				left: -2px
+			+media-breakpoint-down(xs)
+				+make-col-offset(0)
+		&-icon
+			width: 80px
+			height: 80px
+			display: flex
+			justify-content: center
+			align-items: center
+			border-radius: 10em
+			border: 5px solid $accent
+			position: absolute
+			transition: all .25s linear
+			&:hover
+				border: 2px solid $accent
+				transition: all .25s linear
+				>.far 
+					font-size: 40px
+					transition: all .25s linear
+			.far 
+				font-size: 36px
+				color: #000
+				transition: all .25s linear
+		p 
+			display: block
+			font-size: 18px
+			font-weight: normal
+			line-height: 1.4	
+			word-wrap: normal
+			span 
+				display: block
+				font-size: 16px
+				color: red
+				font-weight: bold 
+				margin-top: 5px
+
